@@ -1,5 +1,7 @@
 ## mbti test
 
-css animation : TCP SCHOOL.com
-font : google font
-bootstrap : getbootstrap.com
+### 참고 사이트
+
+css animation : TCP SCHOOL.com<br>
+font : google font<br>
+bootstrap : getbootstrap.com<br>
