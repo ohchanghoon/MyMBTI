@@ -1,5 +1,6 @@
 const main = document.querySelector('#main'); // const : 변수를 상수로 선언하여 1개만 선언가능
 const qna = document.querySelector('#qna'); // querySelector : 문서에서 css 선택자에 대응되는것을 선택해줌
+const endPoint = 12;
 
 function addAnswer(answerText, qIdx) {
   var a = document.querySelector('.answerBox');
@@ -38,6 +39,8 @@ function goNext(qIdx) {
   for (let i in qnaList[qIdx].a) {
     addAnswer(qnaList[qIdx].a[i].answer, qIdx);
   }
+  var status = document.querySelector('.statusBar');
+  status.style.width = (100 / endPoint) * (qIdx + 1) + '%';
 }
 
 function begin() {
